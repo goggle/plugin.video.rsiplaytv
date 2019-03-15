@@ -24,7 +24,7 @@
     <forum>https://forum.kodi.tv/showthread.php?tid=331129</forum>
     <website>https://www.rsi.ch/play/tv</website>
     <email>seileralex@gmail.com</email>
-    <source>https://github.com/goggle/plugin.video.rtsplaytv</source>
+    <source>https://github.com/goggle/plugin.video.rsiplaytv</source>
     <news>v1.5.0 (2019-03-15)
  - Initial release: For a feature list have a look at the README on https://github.com/goggle/plugin.video.rsiplaytv</news>
     <assets>
