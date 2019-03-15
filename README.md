@@ -15,7 +15,7 @@ Bring the full power of the [RSI Play TV media library](https://www.rsi.ch/play/
  - [x] Choose between SD and HD quality.
  - [x] Subtitle support.
  - [ ] Livestreams that are exclusively broadcasted on RSI.ch (only available in Switzerland).
- - [x] Live TV support: RSI 1, RSI 2 and RSI info (only available in Switzerland).
+ - [ ] Live TV support: RSI 1, RSI 2 and RSI info (only available in Switzerland).
 
 ## Installation
  - The plugin is available in the official "Kodi Add-on repository". This is the recommended way to get the plugin.
