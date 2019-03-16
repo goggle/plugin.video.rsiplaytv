@@ -36,7 +36,7 @@ ADDON_ID = 'plugin.video.rsiplaytv'
 REAL_SETTINGS = xbmcaddon.Addon(id=ADDON_ID)
 ADDON_NAME = REAL_SETTINGS.getAddonInfo('name')
 ADDON_VERSION = REAL_SETTINGS.getAddonInfo('version')
-DEBUG = (REAL_SETTINGS.getSetting('Enable_Debugging') == 'true')
+DEBUG = REAL_SETTINGS.getSettingBool('Enable_Debugging')
 CONTENT_TYPE = 'videos'
 
 YOUTUBE_CHANNELS_FILENAME = 'youtube_channels.json'
@@ -92,11 +92,8 @@ def run():
     except Exception:
         page = None
 
-    log('Mode: ' + str(mode))
-    log('URL : ' + str(url))
-    log('Name: ' + str(name))
-    log('Page Hash: ' + str(page_hash))
-    log('Page: ' + str(page))
+    log('Mode: %s, URL: %s, Name: %s, Page Hash: %s, Page: %s' % (
+        str(mode), str(url), str(name), str(page_hash), str(page)))
 
     if mode is None:
         identifiers = [
@@ -106,7 +103,7 @@ def run():
             # 'Recommendations',
             'Newest_Shows',
             'Most_Clicked_Shows',
-            'Soon_Offline',
+            # 'Soon_Offline',
             'Shows_By_Date',
             # 'Live_TV',
             # 'SRF_Live',
