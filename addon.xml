@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.rsiplaytv" name="RSI Play TV" version="1.5.0" provider-name="Alexander Seiler">
+<addon id="plugin.video.rsiplaytv" name="RSI Play TV" version="1.5.1" provider-name="Alexander Seiler">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.srgssr" version="1.5.0"/>
