@@ -95,6 +95,10 @@ msgctxt "#30072"
 msgid "Live TV"
 msgstr ""
 
+msgctxt "#30075"
+msgid "Search"
+msgstr ""
+
 msgctxt "#30074"
 msgid "RSI on YouTube"
 msgstr ""

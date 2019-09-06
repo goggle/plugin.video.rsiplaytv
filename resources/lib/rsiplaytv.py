@@ -105,9 +105,10 @@ def run():
             'Most_Clicked_Shows',
             # 'Soon_Offline',
             'Shows_By_Date',
+            'Search',
             # 'Live_TV',
             # 'SRF_Live',
-            'RSI_YouTube'
+            'RSI_YouTube',
         ]
         RSIPlayTV().build_main_menu(identifiers)
     elif mode == 10:
@@ -144,6 +145,17 @@ def run():
         RSIPlayTV().pick_date()
     # elif mode == 26:
     #     RSIPlayTV().build_tv_menu()
+    elif mode == 27:
+        RSIPlayTV().build_search_menu()
+    elif mode == 28:
+        RSIPlayTV().build_search_media_menu(
+            mode=mode, name=name, page=page, page_hash=page_hash)
+    elif mode == 29:
+        RSIPlayTV().build_search_show_menu(name=name)
+    elif mode == 70:
+        RSIPlayTV().build_recent_search_menu('media')
+    elif mode == 71:
+        RSIPlayTV().build_recent_search_menu('show')
     elif mode == 30:
         RSIPlayTV().build_youtube_main_menu()
     elif mode == 31:
