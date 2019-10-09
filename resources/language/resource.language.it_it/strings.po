@@ -73,7 +73,7 @@ msgstr "Nuovi video (per genere)"
 
 msgctxt "#30055"
 msgid "Most clicked videos (by topic)"
-msgstr "Video più cliccati (per genere)""
+msgstr "Video più cliccati (per genere)"
 
 msgctxt "#30056"
 msgid "Soon offline"
@@ -95,7 +95,7 @@ msgctxt "#30072"
 msgid "Live TV"
 msgstr "Diretta TV"
 
-msgctxt "#30075"
+msgctxt "#30085"
 msgid "Search"
 msgstr "Ricerca"
 

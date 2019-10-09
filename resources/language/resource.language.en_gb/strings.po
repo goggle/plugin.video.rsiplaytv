@@ -95,7 +95,7 @@ msgctxt "#30072"
 msgid "Live TV"
 msgstr ""
 
-msgctxt "#30075"
+msgctxt "#30085"
 msgid "Search"
 msgstr ""
 
