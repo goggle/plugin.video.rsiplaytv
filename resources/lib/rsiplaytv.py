@@ -157,11 +157,7 @@ def run():
     elif mode == 71:
         RSIPlayTV().build_recent_search_menu('show')
     elif mode == 30:
-        RSIPlayTV().build_youtube_main_menu()
-    elif mode == 31:
         RSIPlayTV().build_youtube_channel_overview_menu(33)
-    elif mode == 32:
-        RSIPlayTV().build_youtube_newest_videos_menu(mode, page=page)
     elif mode == 33:
         RSIPlayTV().build_youtube_channel_menu(
             name, mode, page=page, page_token=page_hash)
