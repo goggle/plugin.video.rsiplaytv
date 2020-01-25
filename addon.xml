@@ -12,12 +12,15 @@
     <summary lang="fr_FR">RSI Play vidéothèque</summary>
     <summary lang="en_GB">RSI Play television video library</summary>
     <summary lang="de_DE">RSI Play Videobibliothek</summary>
+    <summary lang="it_IT">Videoteca RSI Play</summary>
     <description lang="fr_FR">Avec RSI Play TV vous pouvez regarder les vidéos de la vidéothèque de la Radio télévision suisse (RSI).</description>
     <description lang="en_GB">RSI Play TV allows you to watch the content from the video library of Swiss Radio and Television (RSI).</description>
     <description lang="de_DE">Mit RSI Play TV können Sie den Inhalt der RSI Play Videobibliothek des Schweizer Fernsehens anschauen.</description>
+    <description lang="it_IT">RSI Play TV ti permette di accedere alla videoteca della Radio e della Televisione Svizzera.</description>
     <disclaimer lang="fr_FR">Certains contenus sont géo-bloqués et disponibles uniquement en Suisse.</disclaimer>
     <disclaimer lang="en_GB">Some content is geo-blocked and only available in Switzerland.</disclaimer>
     <disclaimer lang="de_DE">Einige Inhalte sind nur in der Schweiz verfügbar.</disclaimer>
+    <disclaimer lang="it_IT"> Alcuni contenuti sono geograficamente bloccati e quindi visibili solo in Svizzera.</disclaimer>
     <language>it</language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
