@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/goggle/plugin.video.rsiplaytv/master/resources/icon.png" width="256">
 
-**RSI Play TV** (plugin.video.rsiplaytv) is a Kodi plugin to access the Italian part of the the video library of the Swiss Radio and Television (RSI).
+**RSI Play TV** (plugin.video.rsiplaytv) is a Kodi plugin to access the Italian part of the video library of the Swiss Radio and Television.
 
 ## Goals of the plugin
 Bring the full power of the [RSI Play TV media library](https://www.rsi.ch/play/tv) on your TV (or another device) via [Kodi](https://kodi.tv/). The plugin aims to be close to the original media library, so that the experience of consuming media through the browser or through Kodi should be similar.
