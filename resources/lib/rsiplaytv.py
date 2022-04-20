@@ -22,14 +22,12 @@
 import sys
 import traceback
 
-try:  # Python 3
-    from urllib.parse import unquote_plus
-    from urllib.parse import parse_qsl
-except ImportError:  # Python 2
-    from urlparse import parse_qsl
-    from urllib import unquote_plus
+from urllib.parse import unquote_plus
+from urllib.parse import parse_qsl
 
-from kodi_six import xbmc, xbmcaddon, xbmcplugin
+import xbmc
+import xbmcaddon
+import xbmcplugin
 import srgssr
 
 ADDON_ID = 'plugin.video.rsiplaytv'
@@ -100,14 +98,11 @@ def run():
             'All_Shows',
             'Favourite_Shows',
             'Newest_Favourite_Shows',
-            # 'Recommendations',
-            'Newest_Shows',
-            'Most_Clicked_Shows',
-            # 'Soon_Offline',
+            'Topics',
+            'Most_Searched_TV_Shows',
             'Shows_By_Date',
             'Search',
             # 'Live_TV',
-            # 'SRF_Live',
             'RSI_YouTube',
         ]
         RSIPlayTV().build_main_menu(identifiers)
@@ -118,13 +113,9 @@ def run():
     elif mode == 12:
         RSIPlayTV().build_newest_favourite_menu(page=page)
     elif mode == 13:
-        RSIPlayTV().build_topics_overview_menu('Newest')
+        RSIPlayTV().build_topics_menu()
     elif mode == 14:
-        RSIPlayTV().build_topics_overview_menu('Most clicked')
-    elif mode == 15:
-        RSIPlayTV().build_topics_menu('Soon offline', page=page)
-    # elif mode == 16:
-    #     RSIPlayTV().build_topics_menu('Trending', page=page)
+        RSIPlayTV().build_most_searched_shows_menu()
     elif mode == 17:
         RSIPlayTV().build_dates_overview_menu()
     # elif mode == 18:
@@ -135,10 +126,6 @@ def run():
         RSIPlayTV().build_show_menu(name, page_hash=page_hash)
     elif mode == 21:
         RSIPlayTV().build_episode_menu(name)
-    elif mode == 22:
-        RSIPlayTV().build_topics_menu('Newest', name, page=page)
-    elif mode == 23:
-        RSIPlayTV().build_topics_menu('Most clicked', name, page=page)
     elif mode == 24:
         RSIPlayTV().build_date_menu(name)
     elif mode == 25:
@@ -150,12 +137,8 @@ def run():
     elif mode == 28:
         RSIPlayTV().build_search_media_menu(
             mode=mode, name=name, page=page, page_hash=page_hash)
-    elif mode == 29:
-        RSIPlayTV().build_search_show_menu(name=name)
     elif mode == 70:
-        RSIPlayTV().build_recent_search_menu('media')
-    elif mode == 71:
-        RSIPlayTV().build_recent_search_menu('show')
+        RSIPlayTV().build_recent_search_menu()
     elif mode == 30:
         RSIPlayTV().build_youtube_channel_overview_menu(33)
     elif mode == 33:
@@ -165,6 +148,10 @@ def run():
         RSIPlayTV().play_video(name)
     elif mode == 51:
         RSIPlayTV().play_livestream(name)
+    elif mode == 100:
+        RSIPlayTV().build_menu_by_urn(name)
+    elif mode == 1000:
+        RSIPlayTV().build_menu_apiv3(name, mode, page, page_hash)
 
     xbmcplugin.setContent(int(sys.argv[1]), CONTENT_TYPE)
     xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_UNSORTED)
