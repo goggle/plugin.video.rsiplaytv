@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.rsiplaytv" name="RSI Play TV" version="2.0.0" provider-name="Alexander Seiler">
+<addon id="plugin.video.rsiplaytv" name="RSI Play TV" version="1.9.99" provider-name="Alexander Seiler">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.srgssr" version="2.0.0"/>
+    <import addon="script.module.srgssr" version="1.9.99"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
@@ -29,17 +29,7 @@
     <news>v2.0.0 (TBD)
   - Finalize Python 3 support.
   - Adapt to SRGSSR APIv3.
-  - Remove support for audio because it is not included in the SRGSSR API anymore.
-
-v1.6.0 (2019-10-09)
- - Add search feature.
- - Remove 'Newest YouTube videos' menu.
-
-v1.5.1 (2019-03-28)
- - Fix settings option to choose favourite shows.
-
-v1.5.0 (2019-03-15)
- - Initial release: For a feature list have a look at the README on https://github.com/goggle/plugin.video.rsiplaytv</news>
+  - Remove support for audio because it is not included in the SRGSSR API anymore.</news>
     <assets>
         <icon>resources/icon.png</icon>
         <fanart>resources/fanart.png</fanart>
