@@ -36,6 +36,7 @@
         <screenshot>resources/screenshot-01.png</screenshot>
         <screenshot>resources/screenshot-02.png</screenshot>
         <screenshot>resources/screenshot-03.png</screenshot>
+        <screenshot>resources/screenshot-04.png</screenshot>
     </assets>
   </extension>
 </addon>
