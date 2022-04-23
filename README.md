@@ -5,18 +5,19 @@
 **RSI Play TV** (plugin.video.rsiplaytv) is a Kodi plugin to access the Italian part of the video library of the Swiss Radio and Television.
 
 ## Goals of the plugin
-Bring the full power of the [RSI Play TV media library](https://www.rsi.ch/play/tv) on your TV (or another device) via [Kodi](https://kodi.tv/). The plugin aims to be close to the original media library, so that the experience of consuming media through the browser or through Kodi should be similar.
+Get the [RSI Play TV media library](https://www.rsi.ch/play/tv) on your TV (or another device) via [Kodi](https://kodi.tv/). The plugin aims to be close to the original media library, so that the experience of consuming media through the browser or through Kodi should be similar.
 
 ## Features
- - [x] Overview over all the shows.
- - [x] Manage a list of your favourite RSI shows and get a list of your recently aired favourite shows.
- - [x] List and play segments for shows (if available), so you don't have to watch the whole episode if you are only interested in a specific section.
- - [x] Search videos and shows.
- - [x] Various lists: Newest and most clicked shows by topic (e.g. News, Documentaries, etc.), shows by date.
+ - [x] Overview over all the shows
+ - [x] Manage a list of your favourite RSI shows and get a list of your recently aired favourite shows
+ - [ ] List and play segments for shows (if available), so you don't have to watch the whole episode if you are only interested in a specific section
+ - [x] Shows by date
+ - [x] Search videos
  - [x] Choose between SD and HD quality.
  - [x] Subtitle support.
  - [ ] Livestreams that are exclusively broadcasted on RSI.ch (only available in Switzerland).
  - [ ] Live TV support: RSI 1, RSI 2 and RSI info (only available in Switzerland).
+ - [x] RSI on YouTube: Browse the official RSI channels on YouTube.
 
 ## Installation
  - The plugin is available in the official "Kodi Add-on repository". This is the recommended way to get the plugin.
