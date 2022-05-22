@@ -98,7 +98,8 @@ def run():
             'All_Shows',
             'Favourite_Shows',
             'Newest_Favourite_Shows',
-            # 'Topics',
+            'Homepage',
+            'Topics',
             'Most_Searched_TV_Shows',
             'Shows_By_Date',
             'Search',
@@ -150,6 +151,10 @@ def run():
         RSIPlayTV().play_livestream(name)
     elif mode == 100:
         RSIPlayTV().build_menu_by_urn(name)
+    elif mode == 200:
+        RSIPlayTV().build_homepage_menu()
+    elif mode == 500:
+        RSIPlayTV().playback_not_supported_dialog(name)
     elif mode == 1000:
         RSIPlayTV().build_menu_apiv3(name, mode, page, page_hash)
 
