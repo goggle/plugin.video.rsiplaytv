@@ -153,8 +153,6 @@ def run():
         RSIPlayTV().build_menu_by_urn(name)
     elif mode == 200:
         RSIPlayTV().build_homepage_menu()
-    elif mode == 500:
-        RSIPlayTV().playback_not_supported_dialog(name)
     elif mode == 1000:
         RSIPlayTV().build_menu_apiv3(name, mode, page, page_hash)
 
