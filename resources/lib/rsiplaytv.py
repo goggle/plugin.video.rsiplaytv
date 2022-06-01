@@ -103,7 +103,6 @@ def run():
             'Most_Searched_TV_Shows',
             'Shows_By_Date',
             'Search',
-            # 'Live_TV',
             'RSI_YouTube',
         ]
         RSIPlayTV().build_main_menu(identifiers)
@@ -119,8 +118,6 @@ def run():
         RSIPlayTV().build_most_searched_shows_menu()
     elif mode == 17:
         RSIPlayTV().build_dates_overview_menu()
-    # elif mode == 18:
-    #     RSIPlayTV().build_live_menu()
     elif mode == 19:
         RSIPlayTV().manage_favourite_shows()
     elif mode == 20:
@@ -131,8 +128,6 @@ def run():
         RSIPlayTV().build_date_menu(name)
     elif mode == 25:
         RSIPlayTV().pick_date()
-    # elif mode == 26:
-    #     RSIPlayTV().build_tv_menu()
     elif mode == 27:
         RSIPlayTV().build_search_menu()
     elif mode == 28:
