@@ -27,7 +27,7 @@
     <forum>https://github.com/goggle/plugin.video.rsiplaytv/discussions</forum>
     <website>https://www.rsi.ch/play/tv</website>
     <source>https://github.com/goggle/plugin.video.rsiplaytv</source>
-    <news>v2.1.0 (TBD)
+    <news>v2.1.0 (2022-06-01)
   - Add support for content presented on homepage.
   - Add support for topics.
   - Add support for playback of livestreams.
