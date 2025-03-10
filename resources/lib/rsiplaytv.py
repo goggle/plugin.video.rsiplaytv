@@ -28,20 +28,19 @@ import xbmcaddon
 import xbmcplugin
 import srgssr
 
-ADDON_ID = 'plugin.video.rsiplaytv'
+ADDON_ID = "plugin.video.rsiplaytv"
 REAL_SETTINGS = xbmcaddon.Addon(id=ADDON_ID)
-ADDON_NAME = REAL_SETTINGS.getAddonInfo('name')
-ADDON_VERSION = REAL_SETTINGS.getAddonInfo('version')
-DEBUG = REAL_SETTINGS.getSettingBool('Enable_Debugging')
-CONTENT_TYPE = 'videos'
+ADDON_NAME = REAL_SETTINGS.getAddonInfo("name")
+ADDON_VERSION = REAL_SETTINGS.getAddonInfo("version")
+DEBUG = REAL_SETTINGS.getSettingBool("Enable_Debugging")
+CONTENT_TYPE = "videos"
 
-YOUTUBE_CHANNELS_FILENAME = 'youtube_channels.json'
+YOUTUBE_CHANNELS_FILENAME = "youtube_channels.json"
 
 
 class RSIPlayTV(srgssr.SRGSSR):
     def __init__(self):
-        super(RSIPlayTV, self).__init__(
-            int(sys.argv[1]), bu='rsi', addon_id=ADDON_ID)
+        super(RSIPlayTV, self).__init__(int(sys.argv[1]), bu="rsi", addon_id=ADDON_ID)
 
 
 def log(msg, level=xbmc.LOGDEBUG):
@@ -54,8 +53,8 @@ def log(msg, level=xbmc.LOGDEBUG):
     """
     if DEBUG:
         if level == xbmc.LOGERROR:
-            msg += ' ,' + traceback.format_exc()
-    xbmc.log(ADDON_ID + '-' + ADDON_VERSION + '-' + msg, level)
+            msg += " ," + traceback.format_exc()
+    xbmc.log(ADDON_ID + "-" + ADDON_VERSION + "-" + msg, level)
 
 
 def get_params():
@@ -80,28 +79,30 @@ def run():
     except Exception:
         mode = None
     try:
-        page_hash = unquote_plus(params['page_hash'])
+        page_hash = unquote_plus(params["page_hash"])
     except Exception:
         page_hash = None
     try:
-        page = unquote_plus(params['page'])
+        page = unquote_plus(params["page"])
     except Exception:
         page = None
 
-    log('Mode: %s, URL: %s, Name: %s, Page Hash: %s, Page: %s' % (
-        str(mode), str(url), str(name), str(page_hash), str(page)))
+    log(
+        "Mode: %s, URL: %s, Name: %s, Page Hash: %s, Page: %s"
+        % (str(mode), str(url), str(name), str(page_hash), str(page))
+    )
 
     if mode is None:
         identifiers = [
-            'All_Shows',
-            'Favourite_Shows',
-            'Newest_Favourite_Shows',
-            'Homepage',
-            'Topics',
-            'Most_Searched_TV_Shows',
-            'Shows_By_Date',
-            'Search',
-            'RSI_YouTube',
+            "All_Shows",
+            "Favourite_Shows",
+            "Newest_Favourite_Shows",
+            "Homepage",
+            "Topics",
+            "Most_Searched_TV_Shows",
+            "Shows_By_Date",
+            "Search",
+            "RSI_YouTube",
         ]
         RSIPlayTV().menu_builder.build_main_menu(identifiers)
     elif mode == 10:
@@ -130,14 +131,16 @@ def run():
         RSIPlayTV().menu_builder.build_search_menu()
     elif mode == 28:
         RSIPlayTV().menu_builder.build_search_media_menu(
-            mode=mode, name=name, page=page, page_hash=page_hash)
+            mode=mode, name=name, page=page, page_hash=page_hash
+        )
     elif mode == 70:
         RSIPlayTV().menu_builder.build_recent_search_menu()
     elif mode == 30:
         RSIPlayTV().youtube_builder.build_youtube_channel_overview_menu(33)
     elif mode == 33:
         RSIPlayTV().youtube_builder.build_youtube_channel_menu(
-            name, mode, page=page, page_token=page_hash)
+            name, mode, page=page, page_token=page_hash
+        )
     elif mode == 50:
         RSIPlayTV().player.play_video(name)
     elif mode == 100:
