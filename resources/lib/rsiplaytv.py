@@ -310,7 +310,14 @@ def run():
             "Search",
             "RSI_YouTube",
         ]
-        RSIPlayTV().menu_builder.build_main_menu(identifiers)
+        rsi = RSIPlayTV()
+        rsi.menu_builder.build_main_menu(identifiers)
+
+        # Append Direct TV to the main menu
+        tv_list_item = xbmcgui.ListItem(label=rsi.plugin_language(30072))
+        tv_list_item.setArt({"icon": rsi.icon})
+        tv_url = rsi.build_url(mode=90)
+        xbmcplugin.addDirectoryItem(int(sys.argv[1]), tv_url, tv_list_item, isFolder=True)
     elif mode == 10:
         RSIPlayTV().menu_builder.build_all_shows_menu()
     elif mode == 11:
