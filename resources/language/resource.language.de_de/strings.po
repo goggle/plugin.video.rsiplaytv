@@ -105,4 +105,4 @@ msgstr "RSI auf YouTube"
 
 msgctxt "#30060"
 msgid "Homepage"
-msgstr "Startseite"
+msgstr "Startseite"\nmsgctxt "#30101"\nmsgid "Sport Live"\nmsgstr "Sport Live"\n\nmsgctxt "#30102"\nmsgid "Andere Live-Streams"\nmsgstr "Andere Live-Streams"\n
