@@ -105,4 +105,12 @@ msgstr ""
 
 msgctxt "#30060"
 msgid "Homepage"
-msgstr ""\nmsgctxt "#30101"\nmsgid "Sports Live"\nmsgstr ""\n\nmsgctxt "#30102"\nmsgid "Other Live Streams"\nmsgstr ""\n
+msgstr ""
+
+msgctxt "#30101"
+msgid "Sports Live"
+msgstr "Sports Live"
+
+msgctxt "#30102"
+msgid "Other Live Streams"
+msgstr "Other Live Streams"

@@ -24,7 +24,11 @@ from urllib.parse import unquote_plus
 from urllib.parse import parse_qsl
 
 import xbmc
-import urllib.request\nimport json\nimport datetime\nimport xbmcgui\nimport xbmcaddon
+import urllib.request
+import json
+import datetime
+import xbmcgui
+import xbmcaddon
 import xbmcplugin
 import srgssr
 
@@ -244,7 +248,9 @@ class RSIPlayTV(srgssr.SRGSSR):
                         plugin_url = self.build_url(mode=50, name=urn)
                         xbmcplugin.addDirectoryItem(self.handle, plugin_url, list_item, isFolder=False)
 
-\n\ndef log(msg, level=xbmc.LOGDEBUG):
+
+
+def log(msg, level=xbmc.LOGDEBUG):
     """
     Logs a message using Kodi's logging interface.
 
@@ -346,7 +352,8 @@ def run():
     elif mode == 200:
         RSIPlayTV().menu_builder.build_homepage_menu()
     elif mode == 90:
-        RSIPlayTV().build_livetv_menu(name)\n    elif mode == 1000:
+        RSIPlayTV().build_livetv_menu(name)
+    elif mode == 1000:
         RSIPlayTV().menu_builder.build_menu_apiv3(name, mode, page, page_hash)
 
     xbmcplugin.setContent(int(sys.argv[1]), CONTENT_TYPE)
